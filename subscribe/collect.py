@@ -250,7 +250,7 @@ def aggregate(args: argparse.Namespace) -> None:
     proxies_file = os.path.join(DATA_BASE, args.filename or default_filename)
 
     if args.all:
-        dest_file, artifact, target = "config.yaml", "convert", "V2Ray"
+        dest_file, artifact, target = "config.yaml", "convert", "clash"
 
         filepath = os.path.join(PATH, "subconverter", default_filename)
         if os.path.exists(filepath) and os.path.isfile(filepath):
